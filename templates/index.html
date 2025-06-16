@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ tr.app_title if tr else 'FarmAssist' }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body lang="{{ lang }}">
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="FarmAssist Logo">
+        <h1>{{ tr.app_title if tr else 'FarmAssist' }}</h1>
+      </div>
+      <div class="language-switcher">
+        <button class="language-btn {% if lang == 'en' %}active{% endif %}" onclick="setLanguage('en')">English</button>
+        <button class="language-btn {% if lang == 'hi' %}active{% endif %}" onclick="setLanguage('hi')">हिन्दी</button>
+        <button class="language-btn {% if lang == 'bn' %}active{% endif %}" onclick="setLanguage('bn')">বাংলা</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="card">
+        <div class="crop-selector">
+          <label for="crop-select">{{ tr.select_crop if tr else 'Select a Crop:' }}</label>
+          <select id="crop-select" class="crop-select">
+            <option value="">-- {{ tr.select_crop if tr else 'Select Crop' }} --</option>
+            {% for crop in crops %}
+            <option value="{{ crop.id }}" data-original="{{ crop.original_name }}">{{ crop.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div id="crop-details" class="crop-details">
+          <div class="crop-header">
+            <div class="crop-text-info">
+              <h2 id="crop-name"></h2>
+              <div class="crop-info">
+                <h3 id="conditions-heading">{{ tr.growing_conditions if tr else 'Growing Conditions' }}</h3>
+                <p><strong id="sowing-label">{{ tr.sowing_time if tr else 'Sowing Time:' }}</strong> <span id="sowing-time"></span></p>
+                <p><strong id="harvest-label">{{ tr.harvest_time if tr else 'Harvest Time:' }}</strong> <span id="harvest-time"></span></p>
+                <p><strong id="temp-label">{{ tr.temperature if tr else 'Temperature:' }}</strong> <span id="temperature"></span></p>
+                <p><strong id="rain-label">{{ tr.rainfall if tr else 'Rainfall:' }}</strong> <span id="rainfall"></span></p>
+                <p><strong id="soil-label">{{ tr.soil_type if tr else 'Soil Type:' }}</strong> <span id="soil-type"></span></p>
+              </div>
+            </div>
+            <div class="crop-image-container">
+              <img id="crop-image" src="" alt="">
+            </div>
+          </div>
+
+          <div class="diseases">
+            <h3 id="diseases-heading">{{ tr.diseases_treatments if tr else 'Diseases & Treatments' }}</h3>
+            <div id="diseases-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© KVK Dhalai Salema</p>
+  </footer>
+
+  <!-- Hidden elements for translation labels -->
+  <div style="display:none">
+    <span id="symptoms-label">{{ tr.symptoms if tr else 'Symptoms:' }}</span>
+    <span id="prevention-label">{{ tr.prevention if tr else 'Prevention:' }}</span>
+    <span id="chemical-label">{{ tr.chemical_treatment if tr else 'Chemical Treatment:' }}</span>
+    <span id="organic-label">{{ tr.organic_treatment if tr else 'Organic Treatment:' }}</span>
+    <span id="risk-label">{{ tr.risk_period if tr else 'Risk Period:' }}</span>
+    <span id="pesticide-label">{{ tr.pesticide if tr else 'Pesticide:' }}</span>
+    <span id="dosage-label">{{ tr.dosage if tr else 'Dosage:' }}</span>
+    <span id="no-disease-label">{{ tr.no_disease_info if tr else 'No disease information available' }}</span>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      fetch(`/set_language/${lang}`)
+        .then(() => window.location.reload());
+    }
+
+    document.getElementById('crop-select').addEventListener('change', function() {
+      const cropId = this.value;
+      const detailsDiv = document.getElementById('crop-details');
+
+      if (!cropId) {
+        detailsDiv.style.display = 'none';
+        return;
+      }
+
+      fetch(`/get_crop/${cropId}`)
+        .then(response => {
+          if (!response.ok) throw new Error('Crop not found');
+          return response.json();
+        })
+        .then(crop => {
+          // Update basic info
+          document.getElementById('crop-name').textContent = crop.name || '';
+          document.getElementById('sowing-time').textContent = crop.sowing_time || '';
+          document.getElementById('harvest-time').textContent = crop.harvest_time || '';
+          document.getElementById('temperature').textContent = crop.temperature || '';
+          document.getElementById('rainfall').textContent = crop.rainfall || '';
+          document.getElementById('soil-type').textContent = crop.soil_type || '';
+
+          // Update image
+          const img = document.getElementById('crop-image');
+          img.src = `/static/images/${crop.image}`;
+          img.alt = crop.name;
+
+          // Update diseases
+          const diseasesList = document.getElementById('diseases-list');
+          diseasesList.innerHTML = '';
+
+          if (crop.diseases && crop.diseases.length > 0) {
+            crop.diseases.forEach((disease, index) => {
+              const diseaseDiv = document.createElement('div');
+              diseaseDiv.className = 'disease';
+              
+              let diseaseHTML = `
+                <h4>${disease.name || ''}</h4>
+                ${disease.symptoms ? `<p><strong>${document.getElementById('symptoms-label').textContent}</strong> ${disease.symptoms}</p>` : ''}
+                ${disease.prevention ? `<p><strong>${document.getElementById('prevention-label').textContent}</strong> ${disease.prevention}</p>` : ''}
+              `;
+
+              // Handle different treatment structures
+              let treatmentHtml = '';
+              if (disease.chemical_treatment || disease.pesticide) {
+                treatmentHtml += `<div class="treatment">`;
+                
+                if (disease.chemical_treatment) {
+                  treatmentHtml += `
+                    <h5>${document.getElementById('chemical-label').textContent}</h5>
+                    <p>${disease.chemical_treatment}</p>
+                  `;
+                }
+                
+                if (disease.pesticide) {
+                  treatmentHtml += `
+                    <h5>${document.getElementById('pesticide-label').textContent}</h5>
+                    <p>${disease.pesticide}</p>
+                  `;
+                }
+                
+                if (disease.dosage) {
+                  treatmentHtml += `<p><strong>${document.getElementById('dosage-label').textContent}</strong> ${disease.dosage}</p>`;
+                }
+                
+                if (disease.organic_treatment) {
+                  treatmentHtml += `
+                    <h5>${document.getElementById('organic-label').textContent}</h5>
+                    <p>${disease.organic_treatment}</p>
+                  `;
+                }
+                
+                treatmentHtml += `</div>`;
+              }
+              
+              diseaseHTML += treatmentHtml;
+              
+              if (disease.risk_period) {
+                diseaseHTML += `<p><strong>${document.getElementById('risk-label').textContent}</strong> ${disease.risk_period}</p>`;
+              }
+              
+              if (index < crop.diseases.length - 1) {
+                diseaseHTML += `<hr class="disease-divider">`;
+              }
+              
+              diseaseDiv.innerHTML = diseaseHTML;
+              diseasesList.appendChild(diseaseDiv);
+            });
+          } else {
+            diseasesList.innerHTML = `<p>${document.getElementById('no-disease-label').textContent}</p>`;
+          }
+
+          detailsDiv.style.display = 'block';
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          detailsDiv.style.display = 'none';
+        });
+    });
+
+    // Initialize language-specific fonts
+    document.addEventListener('DOMContentLoaded', function() {
+      const lang = '{{ lang }}';
+      if (lang === 'hi' || lang === 'bn') {
+        document.body.style.fontFamily = lang === 'hi' ? 
+          "'Noto Sans Devanagari', 'Poppins', sans-serif" : 
+          "'Noto Sans Bengali', 'Poppins', sans-serif";
+      }
+    });
+  </script>
+</body>
+</html>

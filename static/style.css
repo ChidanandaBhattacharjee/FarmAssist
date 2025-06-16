@@ -1,0 +1,286 @@
+/* Modern Reset & Base Styles */
+:root {
+  --primary: #2e7d32; /* Green - agriculture theme */
+  --primary-light: #4caf50;
+  --primary-dark: #1b5e20;
+  --secondary: #ff9800; /* Orange - for highlights */
+  --white: #ffffff;
+  --light-bg: #f5f5f5;
+  --text: #333333;
+  --text-light: #666666;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Noto Sans Devanagari', 'Noto Sans Bengali', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--light-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body[lang="hi"] {
+  font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+}
+
+body[lang="bn"] {
+  font-family: 'Noto Sans Bengali', 'Poppins', sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Language Switcher */
+.language-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.language-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.language-btn:hover, .language-btn.active {
+  background: var(--white);
+  color: var(--primary);
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card Styles */
+.card {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Crop Selector */
+.crop-selector {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.crop-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-dark);
+}
+
+.crop-select {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: var(--white);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.crop-select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Crop Details */
+.crop-details {
+  display: none; /* Initially hidden */
+}
+
+.crop-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.crop-text-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.crop-image-container {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+#crop-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.crop-info {
+  margin-top: 1.5rem;
+}
+
+.crop-info p {
+  margin: 0.75rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crop-info strong {
+  color: var(--primary-dark);
+  min-width: 150px;
+  font-weight: 500;
+}
+
+/* Diseases Section */
+.diseases {
+  margin-top: 2rem;
+}
+
+.disease {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--secondary);
+  border-radius: 0 8px 8px 0;
+}
+
+.disease h4 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.treatment {
+  background: #e8f5e9;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 3px solid var(--primary);
+  border-radius: 0 8px 8px 0;
+}
+
+.treatment h5 {
+  margin: 0.5rem 0;
+  color: var(--primary-dark);
+}
+
+.disease-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ddd, transparent);
+  margin: 1.5rem 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .crop-header {
+    flex-direction: column;
+  }
+  
+  .crop-image-container {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    margin-top: 1rem;
+    order: -1;
+  }
+  
+  .crop-info strong {
+    min-width: 120px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.crop-details {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Accessibility Focus Styles */
+:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 2px;
+}

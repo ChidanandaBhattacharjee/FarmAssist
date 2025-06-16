@@ -1,0 +1,264 @@
+{
+  "crops": [
+    {
+      "id": 1,
+      "name": "Wheat",
+      "sowing_time": "November to December",
+      "harvest_time": "March to April",
+      "temperature": "12-25°C",
+      "rainfall": "50-100 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "wheat.jpg",
+      "diseases": [
+        {
+          "name": "Stem Rust (Karnal disease)",
+          "symptoms": "Reddish-brown pustules on stems/leaves that rupture to release powdery spores. Severe infections cause 50-70% yield loss. Spreads rapidly in 20-25°C with high humidity.",
+          "chemical_treatment": "Propiconazole (Tilt 25EC) @ 1ml/L water",
+          "organic_treatment": "Neem oil (5ml/L) + Garlic extract (10ml/L) spray weekly",
+          "risk_period": "Post-monsoon (Sept-Oct)"
+        },
+        {
+          "name": "Karnal Bunt",
+          "symptoms": "Black powdery spores in grains",
+          "chemical_treatment": "Carbendazim (1.5 g per liter of water)",
+          "organic_treatment": "Neem seed extract (5%) spray",
+          "risk_period": "During grain filling"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rice",
+      "sowing_time": "June to July",
+      "harvest_time": "October to November",
+      "temperature": "20-35°C",
+      "rainfall": "150-300 cm",
+      "soil_type": "Clayey loam with good water retention",
+      "image": "rice.jpg",
+      "diseases": [
+        {
+          "name": "Bacterial Leaf Blight (BLB)",
+          "symptoms": "Water-soaked yellow streaks starting at leaf tips that turn white/gray. Oozing bacterial droplets visible in morning dew. Spreads through contaminated water.",
+          "chemical_treatment": "Streptocycline (300ppm) + Copper oxychloride (3g/L)",
+          "organic_treatment": "Pseudomonas fluorescens (10g/L) seed treatment",
+          "risk_period": "Tillering stage (30-45 days after planting)"
+        },
+        {
+          "name": "Sheath Blight",
+          "symptoms": "Elliptical green-gray lesions on leaf sheaths",
+          "chemical_treatment": "Validamycin (3ml/L)",
+          "organic_treatment": "Bordeaux mixture (1%) spray",
+          "risk_period": "High nitrogen conditions"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Maize (Corn)",
+      "sowing_time": "June-July (Kharif), Oct-Nov (Rabi)",
+      "harvest_time": "September-October (Kharif), Feb-March (Rabi)",
+      "temperature": "18-27°C",
+      "rainfall": "60-110 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "maize.jpg",
+      "diseases": [
+        {
+          "name": "Turcicum Leaf Blight",
+          "symptoms": "Yellow-brown elongated lesions on leaves",
+          "chemical_treatment": "Mancozeb (2g/L) + Carbendazim (1g/L)",
+          "organic_treatment": "Neem oil spray (3ml/L)",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Stem Borer",
+          "symptoms": "Dead hearts, bore holes in stems",
+          "chemical_treatment": "Chlorantraniliprole (0.4ml/L)",
+          "organic_treatment": "Neem cake soil application",
+          "risk_period": "Early growth stage"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sugarcane",
+      "sowing_time": "October-November (Adsali), Feb-March (Pre-seasonal)",
+      "harvest_time": "12-18 months after planting",
+      "temperature": "20-26°C (ideal), up to 35°C tolerated",
+      "rainfall": "1500-2500 mm annually",
+      "soil_type": "Deep heavy clayey loams",
+      "image": "sugarcane.jpg",
+      "diseases": [
+        {
+          "name": "Red Rot",
+          "symptoms": "Reddish patches on stems, sour smell",
+          "chemical_treatment": "Carbendazim (1g/L) + Streptocycline (0.5g/L)",
+          "organic_treatment": "Trichoderma viride soil application",
+          "risk_period": "Monsoon season"
+        },
+        {
+          "name": "Pokkah Boeng",
+          "symptoms": "Malformed leaves, twisted tops",
+          "chemical_treatment": "Copper oxychloride (3g/L)",
+          "organic_treatment": "Garlic extract spray (10ml/L)",
+          "risk_period": "High humidity periods"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Cotton",
+      "sowing_time": "April-May (Early), June-July (Regular)",
+      "harvest_time": "September-December",
+      "temperature": "21-30°C",
+      "rainfall": "50-100 cm",
+      "soil_type": "Black cotton soil (Regur)",
+      "image": "cotton.jpg",
+      "diseases": [
+        {
+          "name": "Pink Bollworm",
+          "symptoms": "Entry holes in flower buds/bolls with frass (excreta). Larvae (2-3cm long, pinkish) visible inside damaged bolls.",
+          "chemical_treatment": "Emamectin benzoate (0.5g/L) at 50% flowering",
+          "organic_treatment": "NSKE (5%) + Bt (Bacillus thuringiensis) spray",
+          "risk_period": "Flowering to boll formation"
+        },
+        {
+          "name": "Leaf Curl Virus",
+          "symptoms": "Curled leaves, stunted growth",
+          "chemical_treatment": "Imidacloprid (0.5ml/L) + Neem oil (5ml/L)",
+          "organic_treatment": "Papaya leaf extract spray",
+          "risk_period": "Early growth stage"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Soybean",
+      "sowing_time": "June-July",
+      "harvest_time": "October-November",
+      "temperature": "20-30°C",
+      "rainfall": "60-70 cm",
+      "soil_type": "Well-drained sandy loam",
+      "image": "soybean.jpg",
+      "diseases": [
+        {
+          "name": "Yellow Mosaic Virus",
+          "symptoms": "Yellow patches on leaves",
+          "chemical_treatment": "Acetamiprid (0.2g/L) + NSKE (5%)",
+          "organic_treatment": "Cow urine spray (10%)",
+          "risk_period": "Vegetative stage"
+        },
+        {
+          "name": "Stem Fly",
+          "symptoms": "Wilting seedlings, bore holes",
+          "chemical_treatment": "Dimethoate (2ml/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Germination phase"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Potato",
+      "sowing_time": "October-November (Rabi)",
+      "harvest_time": "January-February",
+      "temperature": "15-20°C (ideal for tuber formation)",
+      "rainfall": "50-75 cm",
+      "soil_type": "Sandy loam with organic matter",
+      "image": "potato.jpg",
+      "diseases": [
+        {
+          "name": "Late Blight",
+          "symptoms": "Water-soaked green lesions on leaves that turn brown with white fungal growth underneath. Tubers show reddish-brown dry rot.",
+          "chemical_treatment": "Metalaxyl + Mancozeb (2g/L) at first symptom",
+          "organic_treatment": "Horsetail tea (Equisetum arvense extract) spray",
+          "risk_period": "Cool (15-20°C) humid weather"
+        },
+        {
+          "name": "Potato Tuber Moth",
+          "symptoms": "Tunnels in tubers, frass visible",
+          "chemical_treatment": "Chlorpyriphos (5ml/L for soil drenching)",
+          "organic_treatment": "Neem cake application",
+          "risk_period": "Storage period"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Tomato",
+      "sowing_time": "June-July (Kharif), Nov-Dec (Rabi)",
+      "harvest_time": "3-4 months after transplanting",
+      "temperature": "20-25°C (day), 15-20°C (night)",
+      "rainfall": "60-100 cm",
+      "soil_type": "Well-drained red loam",
+      "image": "tomato.jpg",
+      "diseases": [
+        {
+          "name": "Tomato Leaf Curl Virus",
+          "symptoms": "Upward curling leaves, stunting",
+          "chemical_treatment": "Imidacloprid (0.5ml/L) + Neem oil (3ml/L)",
+          "organic_treatment": "Papaya leaf extract spray",
+          "risk_period": "Seedling stage"
+        },
+        {
+          "name": "Fruit Borer",
+          "symptoms": "Holes in fruits, larvae inside",
+          "chemical_treatment": "Spinosad (0.5ml/L)",
+          "organic_treatment": "Bt (Bacillus thuringiensis) spray",
+          "risk_period": "Fruit formation stage"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Chickpea (Chana)",
+      "sowing_time": "October-November",
+      "harvest_time": "February-March",
+      "temperature": "15-25°C",
+      "rainfall": "40-50 cm",
+      "soil_type": "Well-drained sandy loam",
+      "image": "chickpea.jpg",
+      "diseases": [
+        {
+          "name": "Fusarium Wilt",
+          "symptoms": "Yellowing leaves, wilting plants",
+          "chemical_treatment": "Carbendazim (1g/L) + Trichoderma viride (5g/L)",
+          "organic_treatment": "Compost tea soil drench",
+          "risk_period": "Flowering stage"
+        },
+        {
+          "name": "Pod Borer",
+          "symptoms": "Holes in pods, larvae inside",
+          "chemical_treatment": "Indoxacarb (0.5ml/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Pod formation"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Mango",
+      "sowing_time": "July-August (Grafting season)",
+      "harvest_time": "April-June (varies by variety)",
+      "temperature": "24-30°C",
+      "rainfall": "75-250 cm",
+      "soil_type": "Deep well-drained loamy soil",
+      "image": "mango.jpg",
+      "diseases": [
+        {
+          "name": "Anthracnose",
+          "symptoms": "Black sunken lesions on fruits/leaves with concentric rings. Twig dieback observed. Severe in 25-30°C with >80% humidity.",
+          "chemical_treatment": "Carbendazim (1g/L) pre-flowering spray",
+          "organic_treatment": "Baking soda (5g/L) + Neem oil (3ml/L) spray",
+          "risk_period": "Flowering to fruit maturity"
+        },
+        {
+          "name": "Fruit Fly",
+          "symptoms": "Maggots inside fruits, premature dropping",
+          "chemical_treatment": "Malathion (2ml/L) + Jaggery (10g/L as bait)",
+          "organic_treatment": "Neem oil + Citronella oil trap",
+          "risk_period": "Fruit development stage"
+        }
+      ]
+    }
+  ]
+}
