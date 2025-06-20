@@ -1,0 +1,21 @@
+# Exclude Flux model files (if used for AI-generated crop images)
+flux_schnell.safetensors
+*.safetensors
+
+# Exclude large datasets
+data/large_dataset.csv
+datasets/
+
+# Exclude virtual environment
+venv/
+
+# Exclude temporary files
+__pycache__/
+*.pyc
+*.log
+
+# Exclude large media files (if any)
+static/videos/
+static/large_images/
+static/images
+

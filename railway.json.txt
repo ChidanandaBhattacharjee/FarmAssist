@@ -1,0 +1,8 @@
+{
+  "builds": {
+    "src/api": {
+      "runtime": "python",
+      "timeout": 600
+    }
+  }
+}

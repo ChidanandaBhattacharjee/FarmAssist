@@ -259,6 +259,656 @@
           "risk_period": "Fruit development stage"
         }
       ]
+    },
+    {
+      "id": 11,
+      "name": "Barley",
+      "sowing_time": "October-November",
+      "harvest_time": "March-April",
+      "temperature": "15-25°C",
+      "rainfall": "40-75 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "barley.jpg",
+      "diseases": [
+        {
+          "name": "Net Blotch",
+          "symptoms": "Dark brown net-like patterns on leaves",
+          "chemical_treatment": "Propiconazole (0.5ml/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Wet conditions (Dec-Jan)"
+        },
+        {
+          "name": "Powdery Mildew",
+          "symptoms": "White powdery coating on leaves",
+          "chemical_treatment": "Sulphur (2g/L)",
+          "organic_treatment": "Milk spray (10ml/L)",
+          "risk_period": "Cool, dry weather"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Mustard",
+      "sowing_time": "October-November",
+      "harvest_time": "February-March",
+      "temperature": "10-25°C",
+      "rainfall": "50-100 cm",
+      "soil_type": "Sandy loam with organic matter",
+      "image": "mustard.jpg",
+      "diseases": [
+        {
+          "name": "Alternaria Blight",
+          "symptoms": "Dark spots with concentric rings on leaves",
+          "chemical_treatment": "Mancozeb (2g/L)",
+          "organic_treatment": "Garlic extract (10ml/L) spray",
+          "risk_period": "High humidity (Nov-Dec)"
+        },
+        {
+          "name": "White Rust",
+          "symptoms": "White pustules on leaves",
+          "chemical_treatment": "Metalaxyl (1g/L)",
+          "organic_treatment": "Neem cake soil application",
+          "risk_period": "Early growth stage"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Groundnut",
+      "sowing_time": "June-July",
+      "harvest_time": "October-November",
+      "temperature": "20-30°C",
+      "rainfall": "50-125 cm",
+      "soil_type": "Sandy loam with good drainage",
+      "image": "groundnut.jpg",
+      "diseases": [
+        {
+          "name": "Leaf Spot",
+          "symptoms": "Dark brown spots with yellow halos on leaves",
+          "chemical_treatment": "Chlorothalonil (2g/L)",
+          "organic_treatment": "Trichoderma viride (5g/L) spray",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Aflatoxin",
+          "symptoms": "Discoloration and mold on pods",
+          "chemical_treatment": "Aflatoxin control with proper drying",
+          "organic_treatment": "Sun drying + Neem oil (3ml/L)",
+          "risk_period": "Post-harvest storage"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Lentil",
+      "sowing_time": "October-November",
+      "harvest_time": "February-March",
+      "temperature": "15-25°C",
+      "rainfall": "30-50 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "lentil.jpg",
+      "diseases": [
+        {
+          "name": "Rust",
+          "symptoms": "Orange-brown pustules on leaves",
+          "chemical_treatment": "Mancozeb (2g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Cool, moist weather"
+        },
+        {
+          "name": "Wilt",
+          "symptoms": "Wilting and yellowing of plants",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Compost tea drench",
+          "risk_period": "Flowering stage"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Coffee",
+      "sowing_time": "April-May",
+      "harvest_time": "November-December",
+      "temperature": "18-28°C",
+      "rainfall": "150-200 cm",
+      "soil_type": "Well-drained loamy soil with shade",
+      "image": "coffee.jpg",
+      "diseases": [
+        {
+          "name": "Coffee Rust",
+          "symptoms": "Yellow-orange spots on leaves",
+          "chemical_treatment": "Copper-based fungicides (2g/L)",
+          "organic_treatment": "Neem oil (5ml/L) + shade management",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Berry Borer",
+          "symptoms": "Holes in coffee berries with larvae",
+          "chemical_treatment": "Endosulfan (1ml/L)",
+          "organic_treatment": "Traps with coffee pulp",
+          "risk_period": "Fruit development"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Tea",
+      "sowing_time": "March-April",
+      "harvest_time": "May-November (multiple harvests)",
+      "temperature": "20-30°C",
+      "rainfall": "150-250 cm",
+      "soil_type": "Well-drained acidic loamy soil",
+      "image": "tea.jpg",
+      "diseases": [
+        {
+          "name": "Blister Blight",
+          "symptoms": "Small, raised spots on leaves turning grayish-white",
+          "chemical_treatment": "Copper oxychloride (2g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Rainy season (Jun-Aug)"
+        },
+        {
+          "name": "Red Spider Mite",
+          "symptoms": "Yellowing leaves with fine webbing",
+          "chemical_treatment": "Dicofol (2ml/L)",
+          "organic_treatment": "Predatory mites + soap solution",
+          "risk_period": "Dry spells"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Ginger",
+      "sowing_time": "April-May",
+      "harvest_time": "December-January",
+      "temperature": "20-30°C",
+      "rainfall": "150-300 cm",
+      "soil_type": "Well-drained loamy or sandy loam",
+      "image": "ginger.jpg",
+      "diseases": [
+        {
+          "name": "Rhizome Rot",
+          "symptoms": "Soft, watery rot of rhizomes with foul odor",
+          "chemical_treatment": "Mancozeb (2g/L) + Trichoderma",
+          "organic_treatment": "Cow dung slurry soak",
+          "risk_period": "Excessive rain"
+        },
+        {
+          "name": "Bacterial Wilt",
+          "symptoms": "Wilting and yellowing of leaves",
+          "chemical_treatment": "Streptomycin (0.5g/L)",
+          "organic_treatment": "Bio-control agents like Pseudomonas",
+          "risk_period": "Warm, wet conditions"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Turmeric",
+      "sowing_time": "April-May",
+      "harvest_time": "December-January",
+      "temperature": "20-30°C",
+      "rainfall": "150-200 cm",
+      "soil_type": "Well-drained loamy or alluvial soil",
+      "image": "turmeric.jpg",
+      "diseases": [
+        {
+          "name": "Leaf Spot",
+          "symptoms": "Brown spots with yellow halos on leaves",
+          "chemical_treatment": "Chlorothalonil (2g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Monsoon season"
+        },
+        {
+          "name": "Rhizome Rot",
+          "symptoms": "Decay of rhizomes with fungal growth",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Trichoderma application",
+          "risk_period": "Waterlogged conditions"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Orange (Khasi Mandarin)",
+      "sowing_time": "February-March",
+      "harvest_time": "November-December",
+      "temperature": "15-30°C",
+      "rainfall": "100-200 cm",
+      "soil_type": "Well-drained loamy or sandy loam",
+      "image": "orange.jpg",
+      "diseases": [
+        {
+          "name": "Citrus Canker",
+          "symptoms": "Raised corky lesions on leaves and fruits",
+          "chemical_treatment": "Copper oxychloride (3g/L)",
+          "organic_treatment": "Bordeaux mixture (1%)",
+          "risk_period": "Warm, wet weather"
+        },
+        {
+          "name": "Fruit Fly",
+          "symptoms": "Larvae inside fruits, premature drop",
+          "chemical_treatment": "Malathion (2ml/L) + bait",
+          "organic_treatment": "Traps with fruit pulp",
+          "risk_period": "Fruit ripening"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Pineapple (Tripura Queen)",
+      "sowing_time": "April-May",
+      "harvest_time": "18-24 months after planting",
+      "temperature": "22-30°C",
+      "rainfall": "150-250 cm",
+      "soil_type": "Well-drained sandy loam",
+      "image": "pineapple.jpg",
+      "diseases": [
+        {
+          "name": "Root Rot",
+          "symptoms": "Yellowing leaves, root decay",
+          "chemical_treatment": "Metalaxyl (1g/L)",
+          "organic_treatment": "Trichoderma drench",
+          "risk_period": "Excessive moisture"
+        },
+        {
+          "name": "Mealybug",
+          "symptoms": "White cottony masses on leaves",
+          "chemical_treatment": "Imidacloprid (0.5ml/L)",
+          "organic_treatment": "Soap water spray",
+          "risk_period": "Dry season"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Chilli",
+      "sowing_time": "February-March",
+      "harvest_time": "June-July",
+      "temperature": "20-30°C",
+      "rainfall": "60-120 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "chilli.jpg",
+      "diseases": [
+        {
+          "name": "Anthracnose",
+          "symptoms": "Dark spots on fruits and leaves",
+          "chemical_treatment": "Mancozeb (2g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Powdery Mildew",
+          "symptoms": "White powdery coating on leaves",
+          "chemical_treatment": "Sulphur (2g/L)",
+          "organic_treatment": "Milk spray (10ml/L)",
+          "risk_period": "Dry weather"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Bitter Gourd",
+      "sowing_time": "May-June",
+      "harvest_time": "August-September",
+      "temperature": "25-35°C",
+      "rainfall": "100-150 cm",
+      "soil_type": "Sandy loam with organic matter",
+      "image": "bitter_gourd.jpg",
+      "diseases": [
+        {
+          "name": "Downy Mildew",
+          "symptoms": "Yellow spots on leaves with grayish mold",
+          "chemical_treatment": "Metalaxyl (1g/L)",
+          "organic_treatment": "Neem extract (5%) spray",
+          "risk_period": "Humid conditions"
+        },
+        {
+          "name": "Fruit Rot",
+          "symptoms": "Soft rot on fruits",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Trichoderma (5g/L) application",
+          "risk_period": "Excessive rain"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Ridge Gourd",
+      "sowing_time": "April-May",
+      "harvest_time": "July-August",
+      "temperature": "25-35°C",
+      "rainfall": "100-150 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "ridge_gourd.jpg",
+      "diseases": [
+        {
+          "name": "Powdery Mildew",
+          "symptoms": "White powdery coating on leaves",
+          "chemical_treatment": "Sulphur (2g/L)",
+          "organic_treatment": "Cow urine (10%) spray",
+          "risk_period": "Dry weather"
+        },
+        {
+          "name": "Viral Mosaic",
+          "symptoms": "Mottled leaves, stunted growth",
+          "chemical_treatment": "Imidacloprid (0.5ml/L)",
+          "organic_treatment": "Neem oil (3ml/L) spray",
+          "risk_period": "Early growth"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Watermelon",
+      "sowing_time": "March-April",
+      "harvest_time": "June-July",
+      "temperature": "25-35°C",
+      "rainfall": "50-100 cm",
+      "soil_type": "Sandy loam with good drainage",
+      "image": "watermelon.jpg",
+      "diseases": [
+        {
+          "name": "Fusarium Wilt",
+          "symptoms": "Wilting and yellowing of vines",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Trichoderma (5g/L) soil drench",
+          "risk_period": "Warm weather"
+        },
+        {
+          "name": "Anthracnose",
+          "symptoms": "Dark spots on fruits and leaves",
+          "chemical_treatment": "Mancozeb (2g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Rainy season"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Lemon",
+      "sowing_time": "February-March",
+      "harvest_time": "December-January",
+      "temperature": "15-30°C",
+      "rainfall": "100-150 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "lemon.jpg",
+      "diseases": [
+        {
+          "name": "Citrus Canker",
+          "symptoms": "Raised corky lesions on leaves and fruits",
+          "chemical_treatment": "Copper oxychloride (3g/L)",
+          "organic_treatment": "Bordeaux mixture (1%)",
+          "risk_period": "Warm, wet weather"
+        },
+        {
+          "name": "Fruit Drop",
+          "symptoms": "Premature fruit fall",
+          "chemical_treatment": "Gibberellic acid (0.1%)",
+          "organic_treatment": "Compost mulch",
+          "risk_period": "Flowering stage"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Foxtail Millet",
+      "sowing_time": "June-July",
+      "harvest_time": "September-October",
+      "temperature": "25-35°C",
+      "rainfall": "50-100 cm",
+      "soil_type": "Sandy loam",
+      "image": "foxtail_millet.jpg",
+      "diseases": [
+        {
+          "name": "Leaf Blast",
+          "symptoms": "Spindle-shaped spots on leaves",
+          "chemical_treatment": "Tricyclazole (0.6g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Smut",
+          "symptoms": "Black powdery masses on panicles",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Garlic extract (10ml/L) spray",
+          "risk_period": "Flowering stage"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Cucumber",
+      "sowing_time": "February-March",
+      "harvest_time": "May-June",
+      "temperature": "20-30°C",
+      "rainfall": "60-120 cm",
+      "soil_type": "Well-drained sandy loam",
+      "image": "cucumber.jpg",
+      "diseases": [
+        {
+          "name": "Downy Mildew",
+          "symptoms": "Yellow spots with grayish mold",
+          "chemical_treatment": "Mancozeb (2g/L)",
+          "organic_treatment": "Neem extract (5%) spray",
+          "risk_period": "Humid weather"
+        },
+        {
+          "name": "Powdery Mildew",
+          "symptoms": "White powdery coating on leaves",
+          "chemical_treatment": "Sulphur (2g/L)",
+          "organic_treatment": "Milk spray (10ml/L)",
+          "risk_period": "Dry weather"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Litchi",
+      "sowing_time": "July-August",
+      "harvest_time": "May-June",
+      "temperature": "20-30°C",
+      "rainfall": "100-200 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "litchi.jpg",
+      "diseases": [
+        {
+          "name": "Anthracnose",
+          "symptoms": "Dark spots on fruits and leaves",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Fruit Rot",
+          "symptoms": "Soft rot on fruits",
+          "chemical_treatment": "Mancozeb (2g/L)",
+          "organic_treatment": "Trichoderma (5g/L) application",
+          "risk_period": "High humidity"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Guava",
+      "sowing_time": "February-March",
+      "harvest_time": "November-December",
+      "temperature": "20-30°C",
+      "rainfall": "100-150 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "guava.jpg",
+      "diseases": [
+        {
+          "name": "Fruit Rot",
+          "symptoms": "Soft rot on fruits with fungal growth",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Wilt",
+          "symptoms": "Wilting and yellowing of branches",
+          "chemical_treatment": "Metalaxyl (1g/L)",
+          "organic_treatment": "Trichoderma (5g/L) soil drench",
+          "risk_period": "Warm weather"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Pigeonpea",
+      "sowing_time": "June-July",
+      "harvest_time": "November-December",
+      "temperature": "20-30°C",
+      "rainfall": "60-100 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "pigeonpea.jpg",
+      "diseases": [
+        {
+          "name": "Fusarium Wilt",
+          "symptoms": "Wilting and yellowing of plants",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Trichoderma (5g/L) soil drench",
+          "risk_period": "Flowering stage"
+        },
+        {
+          "name": "Pod Borer",
+          "symptoms": "Holes in pods with larvae",
+          "chemical_treatment": "Indoxacarb (0.5ml/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Pod formation"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Fieldpea",
+      "sowing_time": "October-November",
+      "harvest_time": "February-March",
+      "temperature": "15-25°C",
+      "rainfall": "40-60 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "fieldpea.jpg",
+      "diseases": [
+        {
+          "name": "Powdery Mildew",
+          "symptoms": "White powdery coating on leaves",
+          "chemical_treatment": "Sulphur (2g/L)",
+          "organic_treatment": "Milk spray (10ml/L)",
+          "risk_period": "Dry weather"
+        },
+        {
+          "name": "Root Rot",
+          "symptoms": "Wilting with root decay",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Trichoderma (5g/L) application",
+          "risk_period": "Wet conditions"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Cowpea",
+      "sowing_time": "June-July",
+      "harvest_time": "September-October",
+      "temperature": "25-35°C",
+      "rainfall": "60-100 cm",
+      "soil_type": "Well-drained sandy loam",
+      "image": "cowpea.jpg",
+      "diseases": [
+        {
+          "name": "Anthracnose",
+          "symptoms": "Dark spots on leaves and pods",
+          "chemical_treatment": "Mancozeb (2g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Viral Mosaic",
+          "symptoms": "Mottled leaves, stunted growth",
+          "chemical_treatment": "Imidacloprid (0.5ml/L)",
+          "organic_treatment": "Neem extract (5%) spray",
+          "risk_period": "Early growth"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Brinjal",
+      "sowing_time": "June-July",
+      "harvest_time": "October-November",
+      "temperature": "20-30°C",
+      "rainfall": "60-120 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "brinjal.jpg",
+      "diseases": [
+        {
+          "name": "Bacterial Wilt",
+          "symptoms": "Wilting and yellowing of plants",
+          "chemical_treatment": "Streptomycin (0.5g/L)",
+          "organic_treatment": "Pseudomonas (10g/L) application",
+          "risk_period": "Warm, wet weather"
+        },
+        {
+          "name": "Fruit and Shoot Borer",
+          "symptoms": "Holes in fruits and shoots",
+          "chemical_treatment": "Spinosad (0.5ml/L)",
+          "organic_treatment": "Bt (Bacillus thuringiensis) spray",
+          "risk_period": "Fruiting stage"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Coconut",
+      "sowing_time": "April-May",
+      "harvest_time": "5-7 years for first yield",
+      "temperature": "20-30°C",
+      "rainfall": "150-250 cm",
+      "soil_type": "Well-drained sandy loam",
+      "image": "coconut.jpg",
+      "diseases": [
+        {
+          "name": "Bud Rot",
+          "symptoms": "Rotting of the bud with foul smell",
+          "chemical_treatment": "Copper oxychloride (2g/L)",
+          "organic_treatment": "Neem oil (5ml/L) spray",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Leaf Blight",
+          "symptoms": "Grayish-brown spots on leaves",
+          "chemical_treatment": "Mancozeb (2g/L)",
+          "organic_treatment": "Trichoderma (5g/L) application",
+          "risk_period": "High humidity"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Arecanut",
+      "sowing_time": "May-June",
+      "harvest_time": "5-7 years for first yield",
+      "temperature": "20-30°C",
+      "rainfall": "150-200 cm",
+      "soil_type": "Well-drained loamy soil",
+      "image": "arecanut.jpg",
+      "diseases": [
+        {
+          "name": "Bud Rot",
+          "symptoms": "Rotting of the bud with yellowing leaves",
+          "chemical_treatment": "Copper oxychloride (2g/L)",
+          "organic_treatment": "Neem extract (5%) spray",
+          "risk_period": "Rainy season"
+        },
+        {
+          "name": "Yellow Leaf Disease",
+          "symptoms": "Yellowing and drying of leaves",
+          "chemical_treatment": "Carbendazim (1g/L)",
+          "organic_treatment": "Trichoderma (5g/L) soil drench",
+          "risk_period": "Dry season"
+        }
+      ]
     }
   ]
 }
